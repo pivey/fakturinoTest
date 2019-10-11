@@ -11,4 +11,4 @@ app.get('/welcome', (req, res) => {
   res.status(200).send('Tillsammans	gör	vi	det	lättare	för	ditt	företag	att	växa');
 });
 
-app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`));
+app.listen(process.env.PORT || 5000, () => console.log(`Example app listening on port ${PORT}!`));
